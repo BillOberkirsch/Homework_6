@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+    <title>Weather Dashboard</title>
+    <!--Bootstrap CSS CDN-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" /> -->
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+<body>
+    <!--Jumbotron for Title-->
+    <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:#404040 ;color: white;">
+        <h1> <strong>Weather Dashboard</strong></h1>
+    </div>
+
+    <div id="MainContainer" class="container">
+        <div class="row">
+            <div class="col-3" id="allCities">
+                <br>
+                <form class="form">
+                    <div class="row" id="format-row">
+                        <input type="textbox" id="searchCity" name="searchCity" value="Search City">
+                        <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+                <ul class=search-History></ul>
+            </div>
+            <div class="col-9" id="weather">
+                <br>
+                <div class="dailyOverview">
+                    <div class="city"></div>
+                    <div class="temperature"></div>
+                    <div class="humidity"></div>
+                    <div class="windSpeed"></div>
+                    <div class="uvIndex"></div>
+                </div>
+                <br>
+                <br>
+                <h5>
+                    <b>5-Day Forecast:</b>
+                </h5>
+                <div id="map"></div>
+                <div id="forecast">
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!--jQuery JS-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script> -->
+    <!--Code to Jvascript File-->
+    <script src="./assests/js/script.js"></script>
+</body>
+</html>

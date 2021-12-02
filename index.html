@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
-    <title>Weather Dashboard</title>
-    <!--Bootstrap CSS CDN-->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" /> -->
-    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="./assests/css/style.css">
-</head>
-<body>
-    <!--Jumbotron for Title-->
-    <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:#404040 ;color: white;">
-        <h1> <strong>Weather Dashboard</strong></h1>
-    </div>
-
-    <div id="MainContainer" class="container">
-        <div class="row">
-            <div class="col-3" id="allCities">
-                <br>
-                <form class="form">
-                    <div class="row" id="format-row">
-                        <input type="textbox" id="searchCity" name="searchCity" value="Search City">
-                        <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-                    </div>
-                </form>
-                <ul class=search-History></ul>
-            </div>
-            <div class="col-9" id="weather">
-                <br>
-                <div class="dailyOverview">
-                    <div class="city"></div>
-                    <div class="temperature"></div>
-                    <div class="humidity"></div>
-                    <div class="windSpeed"></div>
-                    <div class="uvIndex"></div>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Weather Dashboard</title>
+        <link rel="stylesheet" href="./assests/css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body class="min-100-vh flex-column">
+        <div id="grad">    
+            <header class="p-5 text-center text-white"> 
+                <h1>Weather Dashboard</h1>
+            </header>
+        </div>
+        <div style="height: max-content;">
+            <div id="leftDiv" class="text-center text-black ">
+                <div id="div1" class="font-style text-bold">
+                  <p>Search for City:</p>  
                 </div>
-                <br>
-                <br>
-                <h5>
-                    <b>5-Day Forecast:</b>
-                </h5>
-                <div id="map"></div>
-                <div id="forecast">
-                </div>  
+                <div id="div2">
+                    <form id="Weather-Form" class="form-inline my-2 my-lg-0 pl-12">
+                        <!--https://getbootstrap.com/docs/5.1/forms/form-control/-->
+                        <input id="txtSearch" type="text" class="form-input mr-sm-2" name="CitySearch"  placeholder="City Name" aria-label="Cit Name example">
+                        <button id="btnSubmit" class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <div id="div3">
+                    <p>This needs to be a line space</p>
+                </div>
+                <div id="div4">
+                    <p>This needs to be where the dynamic searches are added</p>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="rightDiv">
+
+<!--            <div class="card">
+                    <h3 class="card-header">DATE</h3>
+                    <div class="card-body">
+                        <label>cloud</label>
+                        <label>Current Temp</label>
+                        <label>Days Low</label>
+                        <label>Days high</label>
+                        <label>Days low</label>
+                    </div>
+                </div> -->
+
             </div>
         </div>
-    </div>
-    <!--jQuery JS-->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script> -->
-    <!--Code to Jvascript File-->
-    <script src="./assests/js/script.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="./assests/js/app.js"></script>
+    </body>
+
+
 </html>
+

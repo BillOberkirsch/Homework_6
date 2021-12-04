@@ -14,39 +14,27 @@
             </header>
         </div>
         <div style="height: max-content;">
-            <div id="leftDiv" class="text-center text-black ">
+            <div id="leftDiv" class="text-center text-black list-group">
                 <div id="div1" class="font-style text-bold">
-                  <p>Search for City:</p>  
+                  <p>Check City Weather:</p>  
                 </div>
-                <div id="div2">
+                <div id="div2" style="height: 35%;">
                     <form id="Weather-Form" class="form-inline my-2 my-lg-0 pl-12">
                         <!--https://getbootstrap.com/docs/5.1/forms/form-control/-->
                         <input id="txtSearch" type="text" class="form-input mr-sm-2" name="CitySearch"  placeholder="City Name" aria-label="Cit Name example">
                         <button id="btnSubmit" class="btn btn-success" type="submit">Search</button>
+                        <button id="btnClear" class="btn btn-info" type="button" onclick="Clear()">Clear Forecasts</button>
+                        <button id="btnClear" class="btn btn-info" type="button" onclick="Clear_All()">Clear All and Local Storage</button>
                     </form>
                 </div>
-                <div id="div3">
-                    <p>This needs to be a line space</p>
-                </div>
-                <div id="div4">
-                    <p>This needs to be where the dynamic searches are added</p>
-                    <ul>
-
-                    </ul>
+                <div id="btnDiv" >
+                    <form id="btn-Form" class="form-inline my-2 my-lg-0 pl-12">
+                        <!-- <button type="button" class="btn btn-success">Button One</button> -->
+                    </form>
                 </div>
             </div>
             <div id="rightDiv">
 
-<!--            <div class="card">
-                    <h3 class="card-header">DATE</h3>
-                    <div class="card-body">
-                        <label>cloud</label>
-                        <label>Current Temp</label>
-                        <label>Days Low</label>
-                        <label>Days high</label>
-                        <label>Days low</label>
-                    </div>
-                </div> -->
 
             </div>
         </div>
